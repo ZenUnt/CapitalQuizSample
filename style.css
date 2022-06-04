@@ -6,9 +6,22 @@ li {
     list-style:none
 }
 
+header {
+    font-size: 16px;
+}
+
 body {
     font-family: "Century Gothic";
     font-size: 24px;
+}
+@media (min-width: 992px) {
+    body {
+      font-size: 18px;
+    }
+}
+
+footer {
+    font-size: 12px;
 }
 
 .quize-select {
