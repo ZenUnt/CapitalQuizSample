@@ -1,0 +1,46 @@
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style:none
+}
+
+body {
+    font-family: "Century Gothic";
+    font-size: 16px;
+}
+
+.quize-select {
+    display:flex;
+    align-items: center;
+}
+
+.bottom_nav {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom_nav li {
+    margin-right: 40px;
+}
+
+.fadeout {
+    animation: fadein-keyframes 1s ease 0s 1 forwards;
+  }
+
+  @keyframes fadein-keyframes {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+}
+
+#checkAnswer {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 24px;
+}
