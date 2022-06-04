@@ -14,7 +14,7 @@ body {
     font-family: "Century Gothic";
     font-size: 24px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     body {
       font-size: 18px;
     }

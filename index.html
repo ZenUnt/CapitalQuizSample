@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
   <title>株式クイズ</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
   <header class="border-bottom">
     <div class="container">
@@ -25,62 +29,47 @@
   </header>
   <main>
     <div class="container">
-      <div class="cover text-black text-center py-5">
-        <h2 class="display-4 mb-2">株式クイズ 第1問</h2>
-      </div>
-      <div class="bg-secondary text-light rounded py-2 my-2">
-        <h3>
-          【問】PERを説明したものは次のうちどれ？
-        </h3>
-      </div>
-      <div class="row bg-light rounded py-2 m-0">
-        <div class="col-lg-6 my-3 quize-select"><a href="#answerChar" class="select-btn btn-primary btn-lg mx-2" id="correct">ア</a><span class="pl-1">株価を一株利益で割った値。</span></div>
-        <div class="col-lg-6 my-3 quize-select"><a href="#answerChar" class="select-btn btn-primary btn-lg mx-2">イ</a><span class="pl-1">株価を1株あたりの純資産で割った値。</span></div>
-        <div class="col-lg-6 my-3 quize-select"><a href="#answerChar" class="select-btn btn-primary btn-lg mx-2">ウ</a><span class="pl-1">一株当たりの純利益。</span></div>
-        <div class="col-lg-6 my-3 quize-select"><a href="#answerChar" class="select-btn btn-primary btn-lg mx-2">エ</a><span class="pl-1">前期比の純利益の増加率。</span></div>
-      </div>
-      <div style="height:250px"></div>
-      <div>
-        <h3 class="text-info my-3">◆正解</h3>
+      <div class="row">
+        <div class="col-9">
+          <div class="cover text-black py-5">
+            <h1 class="display-4 mb-2">株式クイズ選手権</h2>
+          </div>
+          <div class="br-light rounded py-1 my-2">
+            <p class="m-0">
+              株式クイズ選手権は、株式についてクイズを通して学習するWebサイトです。
+            </p>
+          </div>
+          <div class="py-2 my-4">
+              <a href="q1.html" class="select-btn btn-primary btn-lg px-5 py-3">クイズ開始</a>
+          </div>
+          <div style="height:250px"></div>
 
-        <div class="mx-5" style="width: 200px;"><button class="btn btn-danger btn-lg" id="showAnswerBtn">答えを見る</button></div>
-
-        <div id="answerChar" class="mx-5" style="display: none;">
-          <span class="bg-light p-2 font-weight-bold">ア</span>
-          <div id="checkAnswer"></div>
         </div>
-        <h3 class="text-info my-3">◆解説</h3>
-        <div id="kaisetu"  class="bg-light mx-5 p-2" style="display: none;">
-          <p class="font-weight-bold">PER（Price Earnings Ratio）は株価収益率のことで、株価が1株当たり純利益の何倍の値段が付けられているかを見る投資尺度です。現在の株価が、企業の利益に対して割高か割安かを判断する目安として利用されます。計算式は以下の通りです。</p>
-          <p><img src="per.png" class="mx-auto py-3 w-50" style="display: block"></p>
-          <p>イはPBR（Price Book Ratio）で株価純資産倍率、ウはEPSの説明です。</p>
+        <div class="col-3">
+          <div class="bg-dark text-light text-center p-2 my-5 h-75">
+            <p>広告</p>
+          </div>
 
         </div>
       </div>
-
-
-      <div>
-        <ul class="bottom_nav my-5">
-          <li>
-            <a href="index.html" title="ホームへ戻る">ホームへ</a>
-          </li>
-          <li>
-            <a href="q2.html" title="次の問題">▶次の問題へ</a>
-          </li>
-        </ul>
-      </div>
-
     </div>
   </main>
   <footer class="border-top text-center text-muted py-3">
-    Copyright 株式クイズ選手権<span id="saiten"></span>
+    Copyright 株式クイズ選手権
   </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
