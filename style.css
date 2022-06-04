@@ -8,7 +8,7 @@ li {
 
 body {
     font-family: "Century Gothic";
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .quize-select {
@@ -42,5 +42,5 @@ body {
 #checkAnswer {
     display: inline-block;
     margin-left: 20px;
-    font-size: 24px;
+    font-size: 32px;
 }
