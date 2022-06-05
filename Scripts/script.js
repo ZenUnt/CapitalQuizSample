@@ -8,7 +8,7 @@ $(function() {
     let cookiesArray = cookies.split(';'); // ;で分割し配列に
     let q1 = 0;
 
-    for (let c of cookiesArray) { //一つ一つ取り出して
+    for (var c of cookiesArray) { //一つ一つ取り出して
         let cArray = c.split('='); //さらに=で分割して配列に
         if ( cArray[0] == 'q1') { // 取り出したいkeyと合致したら
             q1 = cArray[1];
@@ -20,8 +20,14 @@ $(function() {
         $('#saiten').html("×");
     }
 
-
-    $('[data-toggle="tooltip"]').tooltip();
+    $('.next-btn').click(function(){
+        let next_page = Number(html_num) + 1;
+        window.location.href = 'q' + next_page + '.html';
+    })
+    $('.prev-btn').click(function(){
+        let prev_page = Number(html_num) - 1;
+        window.location.href = 'q' + prev_page + '.html';
+    })
 
     $('.select-btn').click(function(){
         let id = $(this).attr('id');
