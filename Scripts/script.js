@@ -1,6 +1,9 @@
 $(function() {
     'use strict';
 
+    let html_num = window.location.href.split('/').pop().match(/\d*.html/);
+    html_num = html_num[0].substring(0, html_num[0].length - 5)
+
     let cookies = document.cookie; //全てのcookieを取り出して
     let cookiesArray = cookies.split(';'); // ;で分割し配列に
     let q1 = 0;
@@ -24,10 +27,10 @@ $(function() {
         let id = $(this).attr('id');
         if (id == 'correct') {
             $('#checkAnswer').html("〇正解").attr('class', 'text-success font-weight-bold bg-light p-1 border rounded shadow');
-            document.cookie = 'q1=1';
+            document.cookie = 'q' + html_num + '=1';
         } else {
             $('#checkAnswer').html("×不正解").attr('class', 'text-danger font-weight-bold bg-light p-1 border rounded shadow');
-            document.cookie = 'q1=0';
+            document.cookie = 'q' + html_num + '=0';
         }
         showAnswer();
     })
