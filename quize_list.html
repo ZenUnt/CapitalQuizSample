@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>株式クイズ選手権</title>
+  <title>株式クイズ選手権 - クイズ一覧</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/home.css">
+  <link rel="stylesheet" href="CSS/list.css">
 </head>
 
 <body>
@@ -30,22 +30,27 @@
   <main>
     <div class="container">
       <div class="row">
-        <div class="col-9">
+        <div class="col-lg-9">
           <div class="cover text-black py-5">
-            <h1 class="display-4 mb-2">株式クイズ選手権</h2>
+            <h1 class="display-4 mb-2">株式クイズ一覧</h2>
           </div>
-          <div class="br-light rounded py-1 my-2">
-            <h2 class="m-0">
-              株式クイズ選手権は、株式についてクイズを通して学習する株クイズ問題集です。
-            </h2>
-          </div>
-          <div class="py-2 my-4">
-              <a href="q1.html" class="select-btn btn-primary btn-lg px-5 py-3">クイズ開始</a>
+
+          <table class="quize-table" border="1">
+            <tr>
+              <th><a href="q1.html">問1</a></th><th><a href="q2.html">問2</a></th><th><a href="q3.html">問3</a></th><th><a href="q4.html">問4</a></th><th><a href="q5.html">問5</a></th><th><a href="q6.html">問6</a></th><th><a href="q7.html">問7</a></th><th><a href="q8.html">問8</a></th><th><a href="q9.html">問9</a></th><th><a href="q10.html">問10</a></th>
+            </tr>
+            <tr>
+              <td id="q1">-</td><td id="q2">-</td><td id="q3">-</td><td id="q4">-</td><td id="q5">-</td><td id="q6">-</td><td id="q7">-</td><td id="q8">-</td><td id="q9">-</td><td id="q10">-</td>
+            </tr>
+          </table>
+
+          <div class="py-2 my-5">
+              <a href="q1.html" class="select-btn btn-primary btn-lg px-5 py-3">初めからクイズ開始</a>
           </div>
           <div style="height:250px"></div>
 
         </div>
-        <div class="col-3">
+        <div class="col-lg-3">
           <div class="bg-dark text-light text-center p-2 my-5 h-75">
             <p>広告</p>
           </div>
@@ -69,7 +74,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-  <script src="Scripts/script.js"></script>
+  <script src="Scripts/list.js"></script>
 </body>
 
 </html>
