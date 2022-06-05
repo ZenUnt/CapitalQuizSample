@@ -7,12 +7,13 @@ $(function() {
 
     for (let c of cookiesArray) { //一つ一つ取り出して
         let cArray = c.split('='); //さらに=で分割して配列に
-        if( cArray[0].startsWith('q')){ // 取り出したいkeyと合致したら
-            result[Number(cArray[0].substring(1, cArray[0].length))] = cArray[1];
+        let q_result = cArray[0].match(/q\d*/)[0];
+        if( q_result !== undefined){ // 取り出したいkeyと合致したら
+            result[Number(q_result.substring(1, q_result.length))] = cArray[1];
             if (cArray[1] == 1) {
-                $('#q' + cArray[0].substring(1, cArray[0].length)).html("〇");
+                $('#q' + q_result.substring(1, q_result.length)).html("〇");
             } else {
-                $('#q' + cArray[0].substring(1, cArray[0].length)).html("×");
+                $('#q' + q_result.substring(1, q_result.length)).html("×");
             }
         }
     }
