@@ -7,21 +7,21 @@ li {
 }
 
 header {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 body {
     font-family: "Century Gothic";
-    font-size: 24px;
+    font-size: 1.6rem;
 }
 @media (min-width: 768px) {
     body {
-      font-size: 18px;
+      font-size: 1.2rem;
     }
 }
 
 footer {
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 
 .quize-select {
@@ -55,5 +55,5 @@ footer {
 #checkAnswer {
     display: inline-block;
     margin-left: 20px;
-    font-size: 32px;
+    font-size: 2rem;
 }
