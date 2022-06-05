@@ -11,17 +11,17 @@
 </head>
 
 <body>
-  <header class="border-bottom">
+  <header class="bg-dark">
     <div class="container">
-      <nav class="navbar navbar-expand-sm navbar-light">
-        <a href="index.html" class="navbar-brand">株式クイズ選手権</a>
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <a href="index.html" class="navbar-brand text-light">株式クイズ選手権</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div id="menu" class="collapse navbar-collapse">
           <ul class="navbar-nav">
-            <li class="nav-item"><a href="index.html" class="nav-link">ホーム</a></li>
-            <li class="nav-item"><a href="quize_list.html" class="nav-link">クイズ一覧</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link text-light">ホーム</a></li>
+            <li class="nav-item"><a href="quize_list.html" class="nav-link text-light">クイズ一覧</a></li>
           </ul>
         </div>
       </nav>
@@ -32,21 +32,62 @@
       <div class="row">
         <div class="col-lg-9">
           <div class="cover text-black py-5">
-            <h1 class="display-4 mb-2">株式クイズ一覧</h2>
+            <h1 class="display-4 mb-1">株式クイズ一覧</h2>
+          </div>
+          <div class="py-2 my-4 d-flex justify-content-center">
+            <a href="q1.html" class="select-btn btn-primary btn-lg px-5 py-3">初めからクイズ開始</a>
           </div>
 
-          <table class="quize-table" border="1">
-            <tr>
-              <th><a href="q1.html">問1</a></th><th><a href="q2.html">問2</a></th><th><a href="q3.html">問3</a></th><th><a href="q4.html">問4</a></th><th><a href="q5.html">問5</a></th><th><a href="q6.html">問6</a></th><th><a href="q7.html">問7</a></th><th><a href="q8.html">問8</a></th><th><a href="q9.html">問9</a></th><th><a href="q10.html">問10</a></th>
-            </tr>
-            <tr>
-              <td id="q1">-</td><td id="q2">-</td><td id="q3">-</td><td id="q4">-</td><td id="q5">-</td><td id="q6">-</td><td id="q7">-</td><td id="q8">-</td><td id="q9">-</td><td id="q10">-</td>
-            </tr>
-          </table>
-
-          <div class="py-2 my-5">
-              <a href="q1.html" class="select-btn btn-primary btn-lg px-5 py-3">初めからクイズ開始</a>
+          <div class="quize-row row flex-row justify-content-center text-center">
+            <div class="col-1 p-2 border-left border-dark"><a href="q1.html">問1</a></div>
+            <div class="col-1 p-2"><a href="q2.html">問2</a></div>
+            <div class="col-1 p-2"><a href="q3.html">問3</a></div>
+            <div class="col-1 p-2"><a href="q4.html">問4</a></div>
+            <div class="col-1 p-2"><a href="q5.html">問5</a></div>
+            <div class="col-1 p-2"><a href="q6.html">問6</a></div>
+            <div class="col-1 p-2"><a href="q7.html">問7</a></div>
+            <div class="col-1 p-2"><a href="q8.html">問8</a></div>
+            <div class="col-1 p-2"><a href="q9.html">問9</a></div>
+            <div class="col-1 p-2"><a href="q10.html">問10</a></div>
           </div>
+          <div class="quize-result-row row flex-row justify-content-center text-center">
+            <div class="col-1 p-2 border-left border-dark" id="q1">-</div>
+            <div class="col-1 p-2" id="q2">-</div>
+            <div class="col-1 p-2" id="q3">-</div>
+            <div class="col-1 p-2" id="q4">-</div>
+            <div class="col-1 p-2" id="q5">-</div>
+            <div class="col-1 p-2" id="q6">-</div>
+            <div class="col-1 p-2" id="q7">-</div>
+            <div class="col-1 p-2" id="q8">-</div>
+            <div class="col-1 p-2" id="q9">-</div>
+            <div class="col-1 p-2" id="q10">-</div>
+          </div>
+
+          <div class="quize-row row flex-row justify-content-center text-center mt-4">
+            <div class="col-1 p-2 border-left border-dark"><a href="q1.html">問11</a></div>
+            <div class="col-1 p-2"><a href="q2.html">問12</a></div>
+            <div class="col-1 p-2"><a href="q3.html">問13</a></div>
+            <div class="col-1 p-2"><a href="q4.html">問14</a></div>
+            <div class="col-1 p-2"><a href="q5.html">問15</a></div>
+            <div class="col-1 p-2"><a href="q6.html">問16</a></div>
+            <div class="col-1 p-2"><a href="q7.html">問17</a></div>
+            <div class="col-1 p-2"><a href="q8.html">問18</a></div>
+            <div class="col-1 p-2"><a href="q9.html">問19</a></div>
+            <div class="col-1 p-2"><a href="q10.html">問20</a></div>
+          </div>
+          <div class="quize-result-row row flex-row justify-content-center text-center">
+            <div class="col-1 p-2 border-left border-dark" id="q11">-</div>
+            <div class="col-1 p-2" id="q12">-</div>
+            <div class="col-1 p-2" id="q13">-</div>
+            <div class="col-1 p-2" id="q14">-</div>
+            <div class="col-1 p-2" id="q15">-</div>
+            <div class="col-1 p-2" id="q16">-</div>
+            <div class="col-1 p-2" id="q17">-</div>
+            <div class="col-1 p-2" id="q18">-</div>
+            <div class="col-1 p-2" id="q19">-</div>
+            <div class="col-1 p-2" id="q20">-</div>
+          </div>
+          
           <div style="height:250px"></div>
 
         </div>

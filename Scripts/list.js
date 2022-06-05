@@ -7,6 +7,9 @@ $(function() {
 
     for (let c of cookiesArray) { //一つ一つ取り出して
         let cArray = c.split('='); //さらに=で分割して配列に
+        if (!cArray[0]) {
+            continue;
+        }
         let q_result = cArray[0].match(/q\d*/)[0];
         if( q_result !== undefined){ // 取り出したいkeyと合致したら
             result[Number(q_result.substring(1, q_result.length))] = cArray[1];

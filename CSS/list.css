@@ -1,10 +1,22 @@
-.quize-table {
+.quize-row div {
     background-color: aliceblue;
-
+    border-top: 0.01rem solid;
+    border-right: 0.01rem solid;
+    font-weight: bold;
 }
 
-.quize-table th, td {
-    font-size: 1rem;
-    padding: 1rem;
+.quize-row a {
+    display: block;
 }
 
+.quize-result-row div {
+    background-color: aliceblue;
+    border-top: 0.01rem dotted;
+    border-right: 0.01rem solid;
+    border-bottom: 0.01rem solid;
+}
+
+body {
+    font-family: "Century Gothic";
+    font-size: 1.2rem;
+}
