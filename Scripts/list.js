@@ -10,8 +10,9 @@ $(function() {
         if (!cArray[0]) {
             continue;
         }
-        let q_result = cArray[0].match(/q\d*/)[0];
-        if( q_result !== undefined){ // 取り出したいkeyと合致したら
+        let q_results = cArray[0].match(/q\d+/); // qで始まり数字が続く場合だけ取り出す
+        if( q_results !== null){
+            let q_result = q_results[0];
             result[Number(q_result.substring(1, q_result.length))] = cArray[1];
             if (cArray[1] == 1) {
                 $('#q' + q_result.substring(1, q_result.length)).html("〇");
