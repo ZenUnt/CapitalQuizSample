@@ -19,6 +19,14 @@ footer {
     font-size: 0.8rem;
 }
 
+.sidebar_links {
+    font-size: 0.88rem;
+}
+
+.sidebar_links a {
+    display: block;
+}
+
 .quize-select {
     display:flex;
     align-items: center;
@@ -31,6 +39,10 @@ footer {
 
 .bottom_nav li {
     margin-right: 40px;
+}
+
+.bottom_nav li button {
+    padding: 0.4rem;
 }
 
 .fadeout {
