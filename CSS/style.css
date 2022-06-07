@@ -53,6 +53,15 @@ h1 {
     box-shadow: 0 5px 15px 0 rgba(100, 100, 100, .3);
 }
 
+.prev_next_btns {
+    display: flex;
+    justify-content: center;
+}
+
+.prev_next_btns li {
+    margin-right: 1.3rem;
+}
+
 .bottom_nav {
     display: flex;
     justify-content: center;
@@ -60,10 +69,6 @@ h1 {
 
 .bottom_nav li {
     padding: 0 40px;
-}
-
-.bottom_nav li button {
-    padding: 0.4rem;
 }
 
 .fadeout {
