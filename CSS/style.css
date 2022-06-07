@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    font-size: 1rem;
+    font-size: 0.8rem;
     box-shadow: 0 5px 15px 0 rgba(100, 100, 100, .3);
 }
 
@@ -29,6 +29,21 @@ h1 {
     border-bottom: 1px solid #bbb;
     margin-bottom: 1rem;
     padding-bottom: 0.4rem;
+}
+
+.header-title {
+    color: aliceblue;
+    font-size: 1.2rem;
+    margin: 1rem 0.6rem;
+}
+
+.header-link {
+    color: aliceblue;
+    margin-left: 0.4rem;
+}
+
+.header-title:hover, .header-link:hover {
+    color: rgb(213, 212, 212);
 }
 
 .sidebar-col {
@@ -68,7 +83,7 @@ h1 {
 }
 
 .bottom_nav li {
-    padding: 0 40px;
+    padding: 0 1rem;
 }
 
 .fadeout {

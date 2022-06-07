@@ -1,24 +1,15 @@
 $(function() {
     'use strict';
 
+    let date1, date_gmt;
+    let kigen = 3000; //cookieの期限（今回は3000日）
+    date1 = new Date();
+    date1.setTime(date1.getTime() + kigen*24*60*60*1000);
+    //GMT形式に変換
+    date_gmt = date1.toGMTString();
+
     let html_num = window.location.href.split('/').pop().match(/\d*.html/);
     html_num = html_num[0].substring(0, html_num[0].length - 5)
-
-    let cookies = document.cookie; //全てのcookieを取り出して
-    let cookiesArray = cookies.split(';'); // ;で分割し配列に
-    let q1 = 0;
-
-    for (var c of cookiesArray) { //一つ一つ取り出して
-        let cArray = c.split('='); //さらに=で分割して配列に
-        if ( cArray[0] == 'q1') { // 取り出したいkeyと合致したら
-            q1 = cArray[1];
-        }
-    }
-    if (q1 == 1) {
-        $('#saiten').html("〇");
-    } else {
-        $('#saiten').html("×");
-    }
 
     $('.next-btn').click(function(){
         let next_page = Number(html_num) + 1;
@@ -33,10 +24,10 @@ $(function() {
         let id = $(this).attr('id');
         if (id == 'correct') {
             $('#checkAnswer').html("〇正解").attr('class', 'text-success font-weight-bold bg-light p-1 border rounded shadow');
-            document.cookie = 'q' + html_num + '=1';
+            document.cookie = 'q' + html_num + '=1; expires=' + date_gmt;
         } else {
             $('#checkAnswer').html("×不正解").attr('class', 'text-danger font-weight-bold bg-light p-1 border rounded shadow');
-            document.cookie = 'q' + html_num + '=0';
+            document.cookie = 'q' + html_num + '=0; expires=' + date_gmt;
         }
         showAnswer();
     })
