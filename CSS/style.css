@@ -31,6 +31,10 @@ h1 {
     padding-bottom: 0.4rem;
 }
 
+.sidebar-col {
+    border-top: 1px solid #bbb;
+}
+
 .sidebar_links {
     font-size: 0.88rem;
     box-shadow: 0 5px 15px 0 rgba(100, 100, 100, .3);
