@@ -6,21 +6,34 @@ li {
     list-style:none
 }
 
-header {
-    font-size: 1.2rem;
-}
-
 body {
     font-family: "Century Gothic";
     font-size: 1.2rem;
 }
 
+header {
+    font-size: 1.2rem;
+    box-shadow: 0 5px 15px 0 rgba(100, 100, 100, .3);
+}
+
+main {
+    box-shadow: 0 5px 5px 0 rgba(200, 200, 200, .3);
+}
+
 footer {
     font-size: 0.8rem;
+    text-align: center;
+}
+
+h1 {
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
 }
 
 .sidebar_links {
     font-size: 0.88rem;
+    box-shadow: 0 5px 15px 0 rgba(100, 100, 100, .3);
 }
 
 .sidebar_links a {
@@ -32,13 +45,17 @@ footer {
     align-items: center;
 }
 
+.btn, .select-btn {
+    box-shadow: 0 5px 15px 0 rgba(100, 100, 100, .3);
+}
+
 .bottom_nav {
     display: flex;
     justify-content: center;
 }
 
 .bottom_nav li {
-    margin-right: 40px;
+    padding: 0 40px;
 }
 
 .bottom_nav li button {
