@@ -45,6 +45,4 @@ $(function() {
         let classlist = document.getElementById('checkAnswer').classList;
         classlist.add('fadeout');
     })
-
-
 })

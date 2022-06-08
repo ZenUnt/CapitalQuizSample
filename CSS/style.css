@@ -105,3 +105,21 @@ h1 {
     margin-left: 20px;
     font-size: 2rem;
 }
+
+@media screen and (min-width:768px){
+    /*　画面サイズが768px以上の場合読み込む　*/
+    header {
+        font-size: 1.15rem;
+        padding: 0.5rem;
+    }
+    
+    .header-title {
+        font-size: 1.8rem;
+        margin: 1rem;
+    }
+
+    .header-link {
+        margin: 1rem;
+        padding: 1rem;
+    }    
+}
