@@ -1,7 +1,7 @@
 $(function() {
     'use strict';
 
-    $('#header').load('./header.html');
+    $('#header').load('./_header.html');
 
     let date1, date_gmt;
     let kigen = 3000; //cookieの期限（今回は3000日）
